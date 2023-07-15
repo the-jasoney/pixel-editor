@@ -27,3 +27,16 @@ void EditorState::setCanvasWidth(int canvasWidth) {
         emit canvasWidthChanged();
     }
 }
+
+bool EditorState::initializeCanvas() {
+    if (m_canvasWidth > 0 && m_canvasHeight > 0) {
+        // initialize new blank
+        canvas.resize(m_canvasHeight * m_canvasWidth * 4);
+    }
+
+    return canvas.isEmpty();
+}
+
+bool EditorState::canvasExists() const {
+    return canvas.isEmpty();
+}

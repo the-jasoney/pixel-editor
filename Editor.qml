@@ -39,13 +39,6 @@ SplitView {
             Item {
                 SplitView.fillWidth: true
                 SplitView.preferredWidth: parent.width * 0.6
-
-                Button {
-                    text: EditorState.canvasHeight
-                    onClicked: {
-                        EditorState.canvasHeight = 500
-                    }
-                }
             }
 
             Item {
