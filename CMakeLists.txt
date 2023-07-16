@@ -20,6 +20,7 @@ qt_add_qml_module(appmbpe4
     QML_FILES
         Main.qml
         Editor.qml
+        PixelCanvas.qml
     SOURCES
         editorstate.cpp
         editorstate.h

@@ -39,6 +39,8 @@ SplitView {
             Item {
                 SplitView.fillWidth: true
                 SplitView.preferredWidth: parent.width * 0.6
+
+                PixelCanvas { }
             }
 
             Item {
